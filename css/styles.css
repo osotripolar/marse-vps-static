@@ -44,6 +44,10 @@ header a{
   text-decoration: none;
 }
 
+header .logo{
+  font-size: xx-large;
+}
+
 nav ul{
   display: flex;
   padding: 0;
@@ -73,13 +77,14 @@ main{
 
 .block-a{
   height: 600px;
+
+  background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+      url("https://images.unsplash.com/photo-1752401369012-703dcd9e763d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM0fHx8ZW58MHx8fHx8");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  background:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)),
-      url("https://images.unsplash.com/photo-1752401369012-703dcd9e763d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM0fHx8ZW58MHx8fHx8");
+  background-attachment: fixed;
 
   display: flex;
 }
@@ -93,7 +98,7 @@ main{
 }
 
 .block-a h2{
-  font-size: xxx-large  ;
+  font-size: xxx-large;
 }
 
 /* =============================== */
@@ -101,4 +106,22 @@ footer{
   background-color: var(--color-main);
   height: 70px;
   color: white;
+  display: flex;
+}
+
+.container__footer{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a{
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover{
+  opacity: 0.7;
 }
