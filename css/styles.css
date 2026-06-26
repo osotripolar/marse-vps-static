@@ -271,6 +271,7 @@ main .container {
   margin: 0;
   opacity: 0;
   transition: opacity 0.3s ease;
+  font-weight: 600;
 }
 
 .block__contact form .formMessage.wrong{

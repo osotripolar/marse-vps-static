@@ -132,18 +132,22 @@ function showFormMessage(message, operation = true) {
   if (!message) return console.log('No se hizo nada')
 
   formMessage.className = 'formMessage'
+  let time
 
   if (operation) {
     formMessage.classList.add('great')
-    setTimeout(() => {
-      formMessage.className = 'formMessage'
-    }, 3000)
+    time = 3000
   } else {
     formMessage.classList.add('wrong')
+    time = 8000
   }
+
+  setTimeout(() => {
+    formMessage.className = 'formMessage'
+  }, time)
+
   formMessage.textContent = message
 }
-
 
 // ============ FETCH FUNCTIONS ============
 
